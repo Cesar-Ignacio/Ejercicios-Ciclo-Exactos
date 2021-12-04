@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1638648018 source:c:\users\usuario\documents\carpeta de c++\programacion_1\ejercicios ciclos exacto\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	"Prototipos.h"
+	"DefinicionFunciones.h"
+	"Puntos.h"
+
+1638647986 c:\users\usuario\documents\carpeta de c++\programacion_1\ejercicios ciclos exacto\prototipos.h
+
+1638648903 c:\users\usuario\documents\carpeta de c++\programacion_1\ejercicios ciclos exacto\definicionfunciones.h
+
+1638648599 c:\users\usuario\documents\carpeta de c++\programacion_1\ejercicios ciclos exacto\puntos.h
+
