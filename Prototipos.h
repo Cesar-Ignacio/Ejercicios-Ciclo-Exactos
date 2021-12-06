@@ -19,6 +19,9 @@ void Enunciodo_6(void);
 void Punto_7(void);
 void Enunciodo_7(void);
 
+void Punto_8(void);
+void Enunciodo_8(void);
+
 ///OTROS
 
 int AloNumeroI();

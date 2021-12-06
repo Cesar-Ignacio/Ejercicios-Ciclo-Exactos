@@ -120,4 +120,45 @@ void Enunciodo_7()
 }
 
 
+void Punto_8()
+{
+    const int cnum=5;
+    float numero=0,maximo=0;
+
+    Enunciodo_8();
+
+    for(int x=0;x<cnum;x++)
+    {
+        cout<<"Ingrese numero:";
+        numero=AloNumeroF();
+
+        if(x==0)
+        {
+            maximo=numero;
+        }
+        else if(numero>=maximo)
+        {
+            maximo=numero;
+        }
+
+    }
+
+    cout<<"Maximo:"<<maximo<<endl;
+
+    cin.get();
+    cin.get();
+    system("cls");
+
+}
+
+
+void Enunciodo_8()
+{
+    cout<<"Ejercicio 8"<<endl;
+    cout<<"Enunciado:"<<endl;
+    cout<<"8) Hacer un programa para ingresar por teclado 20 números, luego determinar e informar el "<<endl;
+    cout<<"máximo. Suponer que los valores de la lista son todos positivos. "<<endl;
+    cout<<"*********************************"<<endl;
+
+}
 #endif // PUNTOS_H_INCLUDED

@@ -24,7 +24,7 @@ int main()
         cout<<"1: Ejercicio 5"<<endl;
         cout<<"2: Ejercicio 6"<<endl;
         cout<<"3: Ejercicio 7"<<endl;
-
+        cout<<"4: Ejercicio 8"<<endl;
         cout<<"***********************"<<endl;
         cout<<"Opcion:";
         opc=AloNumeroI();

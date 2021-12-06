@@ -16,6 +16,10 @@ void PuntoX(int punto)
  {
      Punto_7();
  }
+ if(punto==4 || punto==8)
+ {
+     Punto_8();
+ }
 
 }
 
