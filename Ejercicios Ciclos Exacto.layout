@@ -2,14 +2,29 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="592" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="DefinicionFunciones.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1438" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="5" />
+			<Collapse line="32" />
+			<Collapse line="61" />
+		</Folding>
+	</File>
 	<File name="Prototipos.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="299" topLine="0" />
+			<Cursor1 position="347" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="Puntos.h" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3001" topLine="26" />
+			<Cursor1 position="3820" topLine="49" />
 		</Cursor>
 		<Folding>
 			<Collapse line="5" />
@@ -18,20 +33,8 @@
 			<Collapse line="62" />
 			<Collapse line="72" />
 			<Collapse line="111" />
+			<Collapse line="123" />
+			<Collapse line="155" />
 		</Folding>
-	</File>
-	<File name="DefinicionFunciones.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="310" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="26" />
-			<Collapse line="55" />
-		</Folding>
-	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="680" topLine="9" />
-		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

@@ -161,4 +161,55 @@ void Enunciodo_8()
     cout<<"*********************************"<<endl;
 
 }
+
+
+void Punto_9()
+{
+    const int num=5;
+    Enunciodo_9();
+    float numero=0,maxi=0;
+    int pos=0;
+    for(int x=0;x<num;x++)
+    {
+        cout<<"INgrese numerp:";
+        numero=AloNumeroF();
+
+        if(x==1)
+        {
+            maxi=numero;
+            pos=x+1;
+        }
+        else if(numero>maxi)
+        {
+            maxi=numero;
+            pos=x+1;
+        }
+
+    }
+
+    cout<<"Maximo:"<< maxi<<endl;
+    cout<<"Posicion:"<<pos<<endl;
+
+    cout<<"************************"<<endl;
+    cin.get();
+    cin.get();
+
+    system("cls");
+
+}
+
+
+void Enunciodo_9()
+{
+    cout<<"Ejercicio 8"<<endl;
+    cout<<"Enunciado:"<<endl;
+    cout<<"9) Hacer un programa para ingresar por teclado 10 números enteros, luego determinar e "<<endl;
+    cout<<"informar el máximo y su posición. Suponer que los valores de la lista pueden ser todos "<<endl;
+    cout<<"positivos, todos negativos, ceros , o cualquier combinacion"<<endl;
+    cout<<"************************"<<endl;
+
+
+
+}
+
 #endif // PUNTOS_H_INCLUDED

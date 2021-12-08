@@ -20,9 +20,15 @@ void PuntoX(int punto)
  {
      Punto_8();
  }
+ if(punto==5 || punto==9)
+ {
+     Punto_9();
+ }
 
 }
 
+
+///Calculos
 int AloNumeroI()
 {
     char numero[10];
