@@ -4,11 +4,11 @@
 
 void PuntoX(int punto)
 {
- if(punto==1 || punto==5)
+ if(punto==1 )
  {
    Punto_5();
  }
- if(punto==2 || punto==6)
+ if(punto==2 )
  {
     Punto_6();
  }
@@ -23,6 +23,10 @@ void PuntoX(int punto)
  if(punto==5 || punto==9)
  {
      Punto_9();
+ }
+ if(punto==6 )
+ {
+     Punto_10();
  }
 
 }

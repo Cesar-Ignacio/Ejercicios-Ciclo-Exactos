@@ -212,4 +212,58 @@ void Enunciodo_9()
 
 }
 
+
+void Punto_10()
+{
+
+  int cnum=5;
+  float numero,maximo,minimo;
+
+  Enunciodo_10();
+
+  for(int x=0;x<cnum;x++)
+  {
+      cout<<"Ingrese numero:";
+      numero=AloNumeroF();
+
+      if(x==0)
+      {
+          maximo=numero;
+          minimo=numero;
+      }
+      else
+      {
+        if(numero>maximo)
+        {
+            maximo=numero;
+        }
+        if(numero<minimo)
+        {
+            minimo=numero;
+        }
+      }
+
+  }
+
+  cout<<"Maximo: " << maximo<<endl;
+  cout<<"Minimo: " <<minimo<<endl;
+
+  cin.get();
+  cin.get();
+  system("cls");
+
+
+}
+
+void Enunciodo_10()
+{
+    cout<<"Ejercicio 10"<<endl;
+    cout<<"Enunciado:"<<endl;
+    cout<<"10) Hacer un programa para ingresar por teclado 20 números, luego determinar e informar el "<<endl;
+    cout<<"máximo y el mínimo. Suponer que los valores de la lista pueden ser todos positivos, todos "<<endl;
+    cout<<"negativos, ceros, o cualquier combinación. "<<endl;
+    cout<<"************************"<<endl;
+
+}
+
 #endif // PUNTOS_H_INCLUDED
