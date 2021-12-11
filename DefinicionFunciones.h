@@ -12,7 +12,7 @@ void PuntoX(int punto)
  {
     Punto_6();
  }
- if(punto==3 || punto==7)
+ if(punto==3)
  {
      Punto_7();
  }
@@ -27,6 +27,10 @@ void PuntoX(int punto)
  if(punto==6 )
  {
      Punto_10();
+ }
+ if(punto==7)
+ {
+     Punto_11();
  }
 
 }
@@ -91,5 +95,43 @@ float AloNumeroF()
     return valor;
 }
 
+void MenoryMayor(float numero,int *cnega,int *cposi,float *maxnegativo,float *minpositivo )
+{
+
+   if(numero<0)
+   {
+       *cnega=*(cnega)+1;
+       if(*cnega==1)
+       {
+           *maxnegativo=numero;
+       }
+       else if(numero>*maxnegativo)
+       {
+          *maxnegativo=numero;
+       }
+
+   }
+   else if(numero>0)
+   {
+       *cposi=*(cposi)+1;
+       if(*cposi==1)
+       {
+           *minpositivo=numero;
+       }
+       else if(numero<*minpositivo)
+       {
+           *minpositivo=numero;
+       }
+
+
+   }
+
+
+}
+
+void Prueba(int *c)
+{
+    *c=*(c)+1;
+}
 
 #endif // DEFINICIONFUNCIONES_H_INCLUDED

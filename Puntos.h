@@ -266,4 +266,40 @@ void Enunciodo_10()
 
 }
 
+
+
+void Punto_11()
+{
+
+
+    int cnum=10,cnegativos=0,cpositivos=0;
+    float numero=0,maxnegativo=0,minpositivo=0;
+
+    Enunciodo_11();
+    for(int x=0;x<cnum;x++)
+    {
+        cout<<"Ingrese numero:";
+        numero=AloNumeroF();
+        MenoryMayor(numero,&cnegativos,&cpositivos,&maxnegativo,&minpositivo);
+
+    }
+
+    cout<<"Maximo negativo:"<< maxnegativo<<endl;
+    cout<<"Minimo positivo:"<< minpositivo<<endl;
+    cin.get();
+    cin.get();
+    system("cls");
+
+
+}
+void Enunciodo_11()
+{
+    cout<<"Ejercicio 11"<<endl;
+    cout<<"Enunciado:"<<endl;
+    cout<<"11) Hacer un programa para ingresar por teclado 20 números, luego determinar e informar el "<<endl;
+    cout<<"máximo de los negativos y el mínimo de los positivos. Resolverlo de dos maneras:"<<endl;
+
+    cout<<"*************************"<<endl;
+}
+
 #endif // PUNTOS_H_INCLUDED

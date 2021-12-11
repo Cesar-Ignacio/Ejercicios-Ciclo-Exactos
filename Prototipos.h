@@ -28,11 +28,16 @@ void Enunciodo_9(void);
 void Punto_10(void);
 void Enunciodo_10(void);
 
+
+void Punto_11(void);
+void Enunciodo_11(void);
+
 ///OTROS
+
 
 int AloNumeroI();
 float AloNumeroF();
-
-
+void MenoryMayor(float,int *,int *,float *,float *);
+void Prueba(int *);
 
 #endif // PROTOTIPOS_H_INCLUDED
