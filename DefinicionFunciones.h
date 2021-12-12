@@ -16,11 +16,11 @@ void PuntoX(int punto)
  {
      Punto_7();
  }
- if(punto==4 || punto==8)
+ if(punto==4)
  {
      Punto_8();
  }
- if(punto==5 || punto==9)
+ if(punto==5)
  {
      Punto_9();
  }
@@ -32,7 +32,14 @@ void PuntoX(int punto)
  {
      Punto_11();
  }
-
+ if(punto==8)
+ {
+     Punto_12();
+ }
+ if(punto==9)
+ {
+     Punto_13();
+ }
 }
 
 
@@ -134,4 +141,22 @@ void Prueba(int *c)
     *c=*(c)+1;
 }
 
+void PrimerySegundoMax(int id, float numero, float *mp, float *ms)
+{
+
+    if(id==0)
+    {
+        *mp=numero;
+    }
+    else if(numero>*(mp))
+    {
+        *ms=*(mp);
+        *mp=numero;
+    }
+    else if(numero>*(ms))
+    {
+        *ms=numero;
+    }
+
+}
 #endif // DEFINICIONFUNCIONES_H_INCLUDED

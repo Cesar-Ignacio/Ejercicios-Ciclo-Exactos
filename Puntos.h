@@ -302,4 +302,81 @@ void Enunciodo_11()
     cout<<"*************************"<<endl;
 }
 
+
+void Punto_12()
+{
+    int cnumeros=0,cpositivos=0;
+    float numero=0;
+
+    Enunciodo_12();
+
+    cout<<"Cantidad de numeros:";
+    cnumeros=AloNumeroI();
+
+
+
+    for(int x=0;x<cnumeros;x++)
+    {
+        cout<<"Ingrese numero:";
+        numero=AloNumeroF();
+        if(numero>0)
+        {
+            cpositivos++;
+        }
+
+
+    }
+
+    cout<<"Cantidad de positivos:"<< cpositivos<<endl;
+
+    cin.get();
+    cin.get();
+    system("cls");
+
+}
+void Enunciodo_12()
+{
+    cout<<"Ejercicio 12"<<endl;
+    cout<<"Enunciado:"<<endl;
+    cout<<"12) Hacer un programa para ingresar un valor que indica la cantidad de números que "<<endl;
+    cout<<"componen una lista y luego solicitar se ingresen esos N números. Se pide informar cuantos "<<endl;
+    cout<<"son positivos. "<<endl;
+    cout<<"**********************"<<endl;
+}
+
+
+void Punto_13()
+{
+
+    int cnumeros=5;
+    float numero=0,mprimero=0,msegundo=0;
+
+    Enunciodo_13();
+
+    for(int x=0;x<cnumeros;x++)
+    {
+        cout<<"Ingrese numero:";
+        numero=AloNumeroF();
+        PrimerySegundoMax(x,numero,&mprimero,&msegundo);
+
+    }
+
+    cout<<"Primer max:"<< mprimero<<endl;
+    cout<<"Segundo max:"<< msegundo<<endl;
+    cin.get();
+    cin.get();
+    system("cls");
+
+}
+void Enunciodo_13()
+{
+    cout<<"Ejercicio 12"<<endl;
+    cout<<"Enunciado:"<<endl;
+    cout<<"13) Hacer un programa para ingresar 5 números, luego informar los 2 mayores valores "<<endl;
+    cout<<"ingresados, aclarando cual es el máximo y cual el que le sigue. "<<endl;
+    cout<<"Por ejemplo si la lista ingresada es 10, 8 ,12, 14 ,3 el resultado será 14 y 12. "<<endl;
+    cout<<"Atención: si la lista ingresada es 14, 8 ,12, 14 ,3 el resultado será 14 y 14. "<<endl;
+    cout<<"Resolverlo de dos maneras: "<<endl;
+    cout<<"*************************"<<endl;
+}
 #endif // PUNTOS_H_INCLUDED

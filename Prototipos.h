@@ -32,12 +32,20 @@ void Enunciodo_10(void);
 void Punto_11(void);
 void Enunciodo_11(void);
 
+
+void Punto_12(void);
+void Enunciodo_12(void);
+
+void Punto_13(void);
+void Enunciodo_13(void);
+
 ///OTROS
 
 
 int AloNumeroI();
 float AloNumeroF();
 void MenoryMayor(float,int *,int *,float *,float *);
+void PrimerySegundoMax(int,float,float *,float*);
 void Prueba(int *);
 
 #endif // PROTOTIPOS_H_INCLUDED
