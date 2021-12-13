@@ -39,6 +39,9 @@ void Enunciodo_12(void);
 void Punto_13(void);
 void Enunciodo_13(void);
 
+void Punto_14(void);
+void Enunciodo_14(void);
+
 ///OTROS
 
 
@@ -47,5 +50,5 @@ float AloNumeroF();
 void MenoryMayor(float,int *,int *,float *,float *);
 void PrimerySegundoMax(int,float,float *,float*);
 void Prueba(int *);
-
+int NumeroPrimo(int);
 #endif // PROTOTIPOS_H_INCLUDED

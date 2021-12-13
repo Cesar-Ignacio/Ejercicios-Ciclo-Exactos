@@ -40,6 +40,10 @@ void PuntoX(int punto)
  {
      Punto_13();
  }
+ if(punto==10)
+ {
+     Punto_14();
+ }
 }
 
 
@@ -159,4 +163,20 @@ void PrimerySegundoMax(int id, float numero, float *mp, float *ms)
     }
 
 }
+
+int NumeroPrimo(int numero)
+{
+    int cd=0;
+
+    for(int x=1;x<=numero;x++)
+    {
+        if(numero % x ==0)
+        {
+            cd++;
+        }
+    }
+
+    return cd;
+}
+
 #endif // DEFINICIONFUNCIONES_H_INCLUDED
