@@ -44,6 +44,10 @@ void PuntoX(int punto)
  {
      Punto_14();
  }
+ if(punto==11)
+ {
+     Punto_21();
+ }
 }
 
 
@@ -177,6 +181,23 @@ int NumeroPrimo(int numero)
     }
 
     return cd;
+}
+
+bool Positivos(float anterionum, float numero)
+{
+    float diferencia=0;
+
+    if(anterionum>0 && numero>0)
+    {
+        diferencia=abs(anterionum-numero);
+
+        if(diferencia>=5)
+        {
+            return true;
+        }
+    }
+
+    return false;
 }
 
 #endif // DEFINICIONFUNCIONES_H_INCLUDED

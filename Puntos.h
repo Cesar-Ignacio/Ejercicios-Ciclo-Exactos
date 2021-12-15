@@ -419,5 +419,50 @@ void Enunciodo_14()
 
 }
 
+void Punto_21()
+{
+    int cnumero=10,ppdf5=0;
+    float numero=0,numanterio=0,diferencia=0;
+
+    Enunciodo_21();
+
+    for(int x=0;x<cnumero;x++)
+    {
+        numanterio=numero;
+
+        cout<<"Ingrese numero:";
+        numero=AloNumeroF();
+
+        if(Positivos(numanterio,numero))
+        {
+            ppdf5++;
+        }
+
+
+    }
+
+
+    cout<<"Cantidad de parejas que cumplen la condicion:"<<ppdf5<<endl;
+
+    cin.get();
+    cin.get();
+    system("cls");
+
+
+}
+
+void Enunciodo_21()
+{
+    cout<<"Ejercicio 21"<<endl;
+    cout<<"Enunciado:"<<endl;
+    cout<<"21) Hacer un programa para ingresar por teclado una lista de 10 números. Se pide contar e "<<endl;
+    cout<<"informar la cantidad de pares positivos consecutivos cuya diferencia absoluta sea mayor que 5. "<<endl;
+    cout<<"Ejemplo: "<<endl;
+    cout<<"12, -3, 4, 16, 8, -3, -5, 8, 10, 16 "<<endl;
+    cout<<"En esta lista existen 3 pares que cumplen esa condición: (4-16) (16-8) (10-16), por lo tanto el "<<endl;
+    cout<<"programa emitirá un 3 como resultado. "<<endl;
+    cout<<"******************************"<<endl;
+
+}
 
 #endif // PUNTOS_H_INCLUDED
