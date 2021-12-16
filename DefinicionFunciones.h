@@ -48,6 +48,11 @@ void PuntoX(int punto)
  {
      Punto_21();
  }
+ if(punto==12)
+ {
+     Punto_23();
+ }
+
 }
 
 
@@ -198,6 +203,105 @@ bool Positivos(float anterionum, float numero)
     }
 
     return false;
+}
+
+void PiezasDefectuosas(int operario,int seccion,float pieD,float *pieDM1,int *oper1,float *pieDM2,int *oper2,float *pieDM3,int *oper3)
+{
+
+    if(seccion==1 && pieD>*pieDM1)
+    {
+       *pieDM1=pieD;
+       *oper1=operario;
+    }
+    if(seccion==2 && pieD>*pieDM2)
+    {
+        *pieDM2=pieD;
+        *oper2=operario;
+    }
+    if(seccion==3 && pieD>*pieDM3)
+    {
+        *pieDM3=pieD;
+        *oper3=operario;
+    }
+
+
+}
+
+void MostrarProPiezasD(int seccion,float piezasD,int operario)
+{
+
+    cout<<"Sector "<< seccion <<endl;
+    cout<<"Maximo de piezas defectuosas:"<< piezasD<<endl;
+    cout<<"Propietario:"<<operario<<endl;
+}
+
+void CantidadPiezas(int sector,float pieDF,float pieNDF,float *tpieS1,float *tpieS2,float *tpieS3,float *pdf1,float *pdf2,float *pdf3)
+{
+
+    if(sector==1)
+    {
+        *tpieS1+=pieDF+pieNDF;
+        *pdf1+=pieDF;
+    }
+    if(sector==2)
+    {
+        *tpieS2+=pieDF+pieNDF;
+        *pdf2+=pieDF;
+    }
+    if(sector==3)
+    {
+        *tpieS3+=pieDF+pieNDF;
+        *pdf3+=pieDF;
+    }
+
+}
+
+
+float Mayor(float num1,float num2, float num3)
+{
+    float may=0;
+
+    if(num1>num2)
+    {
+         may=num1;
+    }
+    else
+    {
+        may=num2;
+    }
+    if(num3>may)
+    {
+        may=num3;
+    }
+
+    return may;
+
+}
+
+void PorcetajePDF(float cps1,float cps2, float cps3, float cpd1, float cpd2, float cpd3)
+{
+    float p1=0,p2=0,p3=0, my=0;
+
+    p1=cpd1*100/cps1;
+    p2=cpd2*100/cps2;
+    p3=cpd3*100/cps3;
+
+    my=Mayor(p1,p2,p3);
+
+    if(my==p1)
+    {
+        cout<<"Sector con mayor porcentaje de piezas defectuosas " << 1 <<":"<< my<<"%"<<endl;
+    }
+     if(my==p2)
+    {
+        cout<<"Sector con mayor porcentaje de piezas defectuosas " << 2 <<":"<<my<<"%"<<endl;
+    }
+
+     if(my==p3)
+    {
+        cout<<"Sector con mayor porcentaje de piezas defectuosas " <<3<<":"<<my<<"%"<<endl;
+    }
+
 }
 
 #endif // DEFINICIONFUNCIONES_H_INCLUDED

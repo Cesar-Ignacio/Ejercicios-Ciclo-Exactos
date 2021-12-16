@@ -465,4 +465,51 @@ void Enunciodo_21()
 
 }
 
+
+void Punto_23()
+{
+    int nuperario=0,numeope1=0,numeope2=0,numeope3=0,sector=0,piezasDf=0,piezasNf=0,sectorMPD=0;
+    float sector1=0,maxpiezasD=0,maxpiezasD2=0,maxpiezasD3=0,cps1=0,cps2=0,cps3=0,cpdf1=0,cpdf2=0,cpdf3=0;
+
+    Enunciodo_23();
+
+    for(int x=0;x<5;x++)
+    {
+
+        nuperario=x+1;
+        cout<<"- Número de operario (1 a 20):"<< nuperario<<endl;
+
+        cout<<"- Sector donde trabaja (1, 2, 3):";
+        sector=AloNumeroI();
+        cout<<"- Total de piezas defectuosas:";
+        piezasDf=AloNumeroF();
+        cout<<"- Total de piezas no defectuosas:";
+        piezasNf=AloNumeroF();
+
+        PiezasDefectuosas(nuperario,sector,piezasDf,&maxpiezasD,&numeope1,&maxpiezasD2,&numeope2,&maxpiezasD3,&numeope3);
+
+        CantidadPiezas(sector,piezasDf,piezasNf,&cps1,&cps2,&cps3,&cpdf1,&cpdf2,&cpdf3);
+
+    }
+
+    MostrarProPiezasD(1,maxpiezasD,numeope1);
+    MostrarProPiezasD(2,maxpiezasD2,numeope2);
+    MostrarProPiezasD(3,maxpiezasD3,numeope3);
+
+    PorcetajePDF(cps1,cps2,cps3,cpdf1,cpdf2,cpdf3);
+
+    cin.get();
+    cin.get();
+    system("cls");
+
+}
+
+void Enunciodo_23()
+{
+    cout<<"Ejercicio 23"<<endl;
+    cout<<"Enunciado:"<<endl;
+
+
+}
+
 #endif // PUNTOS_H_INCLUDED

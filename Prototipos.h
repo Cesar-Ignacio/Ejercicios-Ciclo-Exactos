@@ -46,8 +46,12 @@ void Punto_21(void);
 void Enunciodo_21(void);
 
 
+void Punto_23(void);
+void Enunciodo_23(void);
+
 ///OTROS
 
+float Mayor(float,float,float);
 
 int AloNumeroI();
 float AloNumeroF();
@@ -56,4 +60,8 @@ void PrimerySegundoMax(int,float,float *,float*);
 void Prueba(int *);
 int NumeroPrimo(int);
 bool Positivos(float ,float);
+void PiezasDefectuosas(int,int,float,float *,int *,float *,int *,float *,int *);
+void MostrarProPiezasD(int,float,int);
+void CantidadPiezas(int,float,float,float *,float *,float *,float *,float *,float *);
+void PorcetajePDF(float,float,float,float,float,float);
 #endif // PROTOTIPOS_H_INCLUDED
