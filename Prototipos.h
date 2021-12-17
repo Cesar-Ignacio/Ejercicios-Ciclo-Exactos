@@ -49,6 +49,10 @@ void Enunciodo_21(void);
 void Punto_23(void);
 void Enunciodo_23(void);
 
+void Punto_24(void);
+void Enunciodo_24(void);
+
+
 ///OTROS
 
 float Mayor(float,float,float);
@@ -64,4 +68,7 @@ void PiezasDefectuosas(int,int,float,float *,int *,float *,int *,float *,int *);
 void MostrarProPiezasD(int,float,int);
 void CantidadPiezas(int,float,float,float *,float *,float *,float *,float *,float *);
 void PorcetajePDF(float,float,float,float,float,float);
+void ArticuloMasCaro(char,float ,int ,float *,int *,float *,int *,float *,int *);
+void SumaPrecio(char,float ,float *,float *,float *,int *,int *,int *);
+void MayorProPrecio(float,float ,float,int ,int ,int );
 #endif // PROTOTIPOS_H_INCLUDED

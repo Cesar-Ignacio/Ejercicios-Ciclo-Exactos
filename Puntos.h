@@ -512,4 +512,52 @@ void Enunciodo_23()
 
 }
 
+void Punto_24()
+{
+   int canart=5,numart=0,artmcA=0,artmcB=0,artmcC=0,canartA=0,canartB=0,canartC=0;
+   float precio=0,premxA=0,premxB=0,premxC=0,promA=0,promB=0,promC=0,sumpA=0,sumpB=0,sumpC=0;
+   char clase;
+   Enunciodo_24();
+   for(int x=0;x<canart;x++)
+   {
+    cout<<"- Número de artículo:";
+    numart=AloNumeroI();
+    cout<<"- Precio Unitario:";
+    precio=AloNumeroF();
+    cout<<"- Clase de artículo (‘a’, ‘b’, ‘c’):";
+    cin>>clase;
+
+    ArticuloMasCaro(clase,precio,numart,&premxA,&artmcA,&premxB,&artmcB,&premxC,&artmcC);
+    SumaPrecio(clase,precio,&sumpA,&sumpB,&sumpC,&canartA,&canartB,&canartC);
+
+
+    cout<<"***********************"<<endl;
+   }
+
+   cout<<"Articulo mas caro, clase A:" << artmcA<<endl;
+   cout<<"Articulo mas caro, clase B:" << artmcB<<endl;
+   cout<<"Articulo mas caro, clase C:" << artmcC<<endl;
+
+   MayorProPrecio(sumpA,sumpB,sumpC,canartA,canartB,canartC);
+
+   cin.get();
+   cin.get();
+   system("cls");
+
+
+
+
+
+
+}
+
+void Enunciodo_24()
+{
+    cout<<"Ejercicio 24"<<endl;
+    cout<<"Enunciado:"<<endl;
+    cout<<"******************"<<endl;
+
+
+}
+
 #endif // PUNTOS_H_INCLUDED

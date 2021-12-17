@@ -52,6 +52,10 @@ void PuntoX(int punto)
  {
      Punto_23();
  }
+  if(punto==13)
+ {
+     Punto_24();
+ }
 
 }
 
@@ -304,4 +308,81 @@ void PorcetajePDF(float cps1,float cps2, float cps3, float cpd1, float cpd2, flo
 
 }
 
+void ArticuloMasCaro(char clase,float precio,int numart,float *premax1,int *numart1,float *premax2,int *numart2,float *premax3,int *numart3)
+{
+
+    if(clase=='A' || clase=='a')
+    {
+        if(precio>*premax1)
+        {
+            *premax1=precio;
+            *numart1=numart;
+        }
+    }
+    if(clase=='B' || clase=='b')
+    {
+        if(precio>*premax2)
+        {
+            *premax2=precio;
+            *numart2=numart;
+        }
+    }
+    if(clase=='C' || clase=='c')
+    {
+        if(precio>*premax3)
+        {
+            *premax3=precio;
+            *numart3=numart;
+        }
+    }
+
+}
+
+void SumaPrecio(char clase,float precio,float *sumpA,float *sumpB,float *sumpC,int *canartA,int *canartB,int *canartC)
+{
+    if(clase=='A' || clase=='a')
+    {
+        *sumpA+=precio;
+        *canartA+=1;
+    }
+    if(clase=='B' || clase=='b')
+    {
+        *sumpB+=precio;
+        *canartB+=1;
+    }
+    if(clase=='C' || clase=='c')
+    {
+        *sumpC+=precio;
+        *canartC+=1;
+    }
+
+
+}
+
+void MayorProPrecio(float sumpA,float sumpB,float sumpC,int canartA,int canartB,int canartC)
+{
+    float proA=0,proB=0,proC=0,Mpro=0;
+
+    proA=sumpA/canartA;
+    proB=sumpB/canartB;
+    proC=sumpC/canartC;
+
+
+    Mpro=Mayor(proA,proB,proC);
+
+    if(Mpro==proA)
+    {
+        cout<<"El mayor promedio en precio se escuentra en la clase A :"<< proA<<endl;
+    }
+    if(Mpro==proB)
+    {
+        cout<<"El mayor promedio en precio se escuentra en la clase B :"<< proB<<endl;
+    }
+    if(Mpro==proC)
+    {
+
+        cout<<"El mayor promedio en precio se escuentra en la clase C :"<< proC<<endl;
+    }
+
+}
 #endif // DEFINICIONFUNCIONES_H_INCLUDED
